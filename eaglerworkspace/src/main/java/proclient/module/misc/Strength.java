@@ -7,16 +7,16 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.Minecraft;
 import net.minecraft.potion.PotionEffect;
 
-public class SpeedMine extends Module {
-  public SpeedMine() {
-    super("SpeedMine", KeyboardConstants.KEY_NONE, Category.MISC);
+public class Strength extends Module {
+  public Strength() {
+    super("Strength", KeyboardConstants.KEY_NONE, Category.MISC);
   }
   
   public void onEnable() {
-    Minecraft.getMinecraft().thePlayer.addPotionEffect(new PotionEffect(3, 999999999, 1));
+    Minecraft.getMinecraft().thePlayer.addPotionEffect(new PotionEffect(5, 999999999, 99999));
   }
   
   public void onDisable() {
-    Minecraft.getMinecraft().thePlayer.removePotionEffect(3);
+    Minecraft.getMinecraft().thePlayer.removePotionEffect(5);
   }
 }
